@@ -1,6 +1,0 @@
-Documentation/
-README.md
-autovariate.egg-info/
-dist/
-setup.py
-src/
