@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: autovariate
+Version: 1.0.3
+Summary: A package made for streamlining Variational Autoencoders
+Author: Siris2314 (Arihant Tripathi)
+Author-email: tarihant2001@gmail.com
+Keywords: python,NLP,Natural Language Processing,Deep Learning,Machine Learning,Variational Autoencoders,Autoencoders,AutoVariate
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# *AutoVariate: A Python Package to build Variational Autoencoders* 
+
+AutoVariate is a python module to make the usage of Variational Autoencoders more streamlined
+
+Link to package: https://pypi.org/project/autovariate/1.0.2/
+
+Installing AutoVariate
+
+```
+pip3 install autovariate
+```
+
+Documentation can be found here:
+
+(Insert Link Once I make the docs)
+
+
+
