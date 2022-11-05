@@ -1,5 +1,0 @@
-torch
-tqdm
-torchvision
-py-cpuinfo
-py_console

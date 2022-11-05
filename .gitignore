@@ -1,2 +1,2 @@
-/dist
-setup.py
+dist/
+autovariate.egg-info/
