@@ -1,2 +1,2 @@
-dist/
-autovariate.egg-info/
+/dist/
+/autovariate.egg-info/
