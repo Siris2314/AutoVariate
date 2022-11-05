@@ -5,13 +5,19 @@
 [Link to package](https://pypi.org/project/autovariate?target=_blank)
 ##### Installing AutoVariate
 
-```
+```bash
 pip3 install autovariate
 ```
 
-Documentation can be found here:
+#### Documentation can be found here:
 
 (Insert Link Once I make the docs)
+
+#### Algorithm Explanation:
+
+
+
+
 
 
 

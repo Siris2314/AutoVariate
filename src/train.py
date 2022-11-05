@@ -10,13 +10,17 @@ from torchvision import transforms
 import cpuinfo
 from torch.utils.data import DataLoader
 import warnings
-from src.logger import Auto_Var_Logger
+from utils.logger import Auto_Var_Logger
+from typing import Optional
 
 log = Auto_Var_Logger('WARNING')
 
 class auto_variate():
     def __init__(self, input_dim=0, hidden_dim=0, z_dim=0, lr_rate=0, batch_size=0, num_cpu=0, epochs=0, dataset = None):
         super().__init__()
+
+        if(dataset == None):
+            self.dataset = datasets.MNIST(root='dataset/', train=True, transform=transforms.ToTensor(), download=True)
         self.input_dim = input_dim
         self.hidden_dim = hidden_dim
         self.z_dim = z_dim
