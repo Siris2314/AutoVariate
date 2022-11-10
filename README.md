@@ -3,7 +3,8 @@
 #### AutoVariate is a python module to make the usage of Variational Autoencoders more streamlined
 
 #### Tap the logo below to install:
-[<img src="./assets/pip.png">](https://pypi.org/project/autovariate?target=_blank)
+
+[<img src="./assets/pip.png">](https://pypi.org/project/autovariate/?target=_blank)
 
 ##### Installing AutoVariate
 
