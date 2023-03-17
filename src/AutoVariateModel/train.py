@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 from torch.nn import functional as F
-from src.model import AutoVariate
+from model import AutoVariate
 from torchvision.utils import save_image
 import torch
 from tqdm import tqdm
@@ -9,11 +9,13 @@ import torchvision.datasets as datasets
 from torchvision import transforms
 import cpuinfo
 from torch.utils.data import DataLoader
-import warnings
-from utils.logger import Auto_Var_Logger
+import sys
+sys.path.append('/Users/arihanttripathi/Documents/AutoVariateGithub')
+from AutoVariate.utils import logger
 from typing import Optional
 
-log = Auto_Var_Logger('WARNING')
+
+log = logger.Auto_Var_Logger('WARNING')
 
 class auto_variate():
     def __init__(self, input_dim=0, hidden_dim=0, z_dim=0, lr_rate=0, batch_size=0, num_cpu=0, epochs=0, dataset = None):
@@ -102,27 +104,5 @@ class auto_variate():
                 optimizer.step()
                 loop.set_postfix(loss=total_loss.item())
 
-#Example of how to use the class
-if __name__ == '__main__':
-     at = auto_variate()
-     at.set_dataset()
-     device = at.return_device_training()
-     model = at.create_model(at.input_dim, at.hidden_dim, at.z_dim, device).to(device)
-     optimizer = at.create_optimizer(at.lr_rate, model)
-     loss = at.loss_function()
-     at.train(model, at.set_dataloader(), optimizer, loss, device)
-     at.save_model(model)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("Works")

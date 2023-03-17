@@ -1,6 +1,8 @@
 from PIL import Image
 import os
 from pathlib import Path
+import shutil
+
 
 class auto_util():
 
@@ -16,6 +18,14 @@ class auto_util():
             if filename in files:
                 result.append(os.path.join(root, filename))
         return result
+    
+    def erase_dir(self, dir):
+        shutil.rmtree(dir, ignore_errors=True, onerror=None)
+            
+    def list_sub_dir(self, dir): 
+        rootdir = dir
+        return os.listdir(rootdir) 
+ 
 
     def show_module_details(self):
         os.system('pipdeptree -p autovariate --graph-output png > graph.png')

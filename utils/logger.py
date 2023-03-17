@@ -1,5 +1,4 @@
 from py_console import console
-
 class Auto_Var_Logger():
 
     def __init__(self, typeof):
