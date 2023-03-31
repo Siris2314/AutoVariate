@@ -12,7 +12,6 @@ from torch.utils.data import DataLoader
 import sys
 sys.path.append('/Users/arihanttripathi/Documents/AutoVariateGithub')
 from AutoVariate.utils import logger
-from typing import Optional
 
 
 log = logger.Auto_Var_Logger('WARNING')
@@ -103,6 +102,3 @@ class auto_variate():
                 total_loss.backward()
                 optimizer.step()
                 loop.set_postfix(loss=total_loss.item())
-
-
-print("Works")
